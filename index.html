@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MENIOT SHOPPING</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<header class="top-nav">
+  
+  <!-- Updated Premium Logo -->
+  <div class="logo">
+    <span>MENIOT</span>
+    <span>SHOPPING</span>
+  </div>
+
+  <input type="text" placeholder="Search for products..." class="search">
+
+ <nav class="nav-links">
+
+  <a href="#">
+    <img src="img_becomesupplier.png" alt="Supplier">
+    <span>Become Supplier</span>
+  </a>
+
+  <a href="#">
+    <img src="img_order.png" alt="Orders">
+    <span>Orders</span>
+  </a>
+
+  <a href="#">
+    <img src="img_cart.png" alt="Cart">
+    <span>Cart</span>
+  </a>
+
+  <a href="#">
+    <img src="img_signin.png" alt="Sign In">
+    <span>Sign In</span>
+  </a>
+
+  <a href="#">
+    <img src="img_signuppng.png" alt="Sign Up">
+    <span>Sign Up</span>
+  </a>
+
+  <a href="#">
+    <img src="img_profile.png" alt="Profile">
+    <span>Profile</span>
+  </a>
+
+</nav>
+</header>
+
+<!-- CATEGORY BAR -->
+<section class="categories">
+  <a href="#">Men's Wear</a>
+  <a href="#">Women's Wear</a>
+  <a href="#">Kids</a>
+  <a href="#">Household Materials</a>
+  <a href="#">Bedsheets</a>
+  <a href="#">Bags</a>
+  <a href="#">Carpets</a>
+  <a href="#">Innerwears</a>
+  <a href="#">Sweaters</a>
+  <a href="#">Shoes</a>
+  <a href="#">Slippers</a>
+</section>
+
+<!-- HERO BANNER -->
+<!-- HERO BANNER -->
+<section class="hero">
+  <div class="hero-slideshow">
+    <img src="hero1.jpg" alt="Hero Image 1" class="active">
+    <img src="img_cart.png" alt="Hero Image 2">
+    <img src="hero3.jpg" alt="Hero Image 3">
+    <img src="hero4.jpg" alt="Hero Image 4">
+    <img src="hero5.jpg" alt="Hero Image 5">
+    <img src="hero6.jpg" alt="Hero Image 6">
+  </div>
+  <div class="hero-text">
+    <h1>Complete Shopping Place for Everyone</h1>
+    <p>Best Quality • Best Price • Trusted Sellers</p>
+  </div>
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products">
+  <h2>Trending Products</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="shirt.jpg" alt="Men Casual Shirt">
+      <h3>Men Casual Shirt</h3>
+      <p>₹1499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="kurti.jpg" alt="Women Cotton Kurti">
+      <h3>Women Cotton Kurti</h3>
+      <p>₹1799</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="bedsheet.jpg" alt="Double Bedsheet">
+      <h3>Double Bedsheet</h3>
+      <p>₹999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shoes.jpg" alt="Sports Shoes">
+      <h3>Sports Shoes</h3>
+      <p>₹2499</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 MENIOT SHOPPING | All Rights Reserved</p>
+</footer>
+<script>
+const slides = document.querySelectorAll('.hero-slideshow img');
+let currentSlide = 0;
+
+function showNextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+// Change slide every 3 seconds
+setInterval(showNextSlide, 3000);
+</script>
+
+</body>
+</html>

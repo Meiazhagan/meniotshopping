@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+/* TOP NAV */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 18px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* PREMIUM LOGO */
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo span:first-child {
+  background: linear-gradient(45deg, #ff4d4d, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 6px;
+}
+
+.logo span:last-child {
+  color: #111;
+  font-weight: 600;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* SEARCH */
+.search {
+  width: 35%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 5px rgba(255,77,77,0.4);
+}
+
+/* NAV LINKS */
+/* NAV LINKS CONTAINER */
+.nav-links {
+  display: flex;
+  flex-direction: row;     /* Makes items horizontal */
+  align-items: center;
+  gap: 25px;               /* Space between items */
+}
+
+/* EACH MENU ITEM */
+.nav-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* ICON IMAGE */
+.nav-links a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+  color: #ff4d4d;
+  transform: translateY(-2px);
+}
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #111;
+  padding: 12px;
+}
+
+.categories a {
+  color: #fff;
+  margin: 6px 18px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.categories a:hover {
+  color: #ff9900;
+}
+
+/* HERO */
+/* Fullscreen Hero */
+/* Hero Banner at Half Screen */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Half of viewport height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill container without stretching */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slideshow img.active {
+  opacity: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  padding: 0 20px; /* For smaller screens */
+}
+
+
+/* PRODUCTS */
+.products {
+  padding: 60px 50px;
+}
+
+.products h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.product-card p {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #ff4d4d;
+}
+
+/* BUTTON */
+.product-card button {
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: linear-gradient(45deg, #ff4d4d, #ff9900);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.product-card button:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  margin-top: 60px;
+  font-size: 14px;
+}
