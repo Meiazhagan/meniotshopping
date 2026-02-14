@@ -349,11 +349,30 @@ body {
 }
 
 .footer-logo {
-  font-size: 30px;
   font-weight: 800;
-  color: #e91e63; /* Luxury pink accent */
+  font-size: 28px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
+
+.footer-logo span:first-child {
+  /* EXACTLY like header logo's gradient text */
+  background: linear-gradient(45deg, #ff4d4d, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.footer-logo span:last-child {
+  color: #111; /* dark color same as header */
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
 
 .footer-left p {
   font-size: 14px;
