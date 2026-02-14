@@ -226,6 +226,15 @@ body {
 .product-card button:hover {
   transform: scale(1.05);
 }
+.ethnic-collection {
+  padding: 60px 8%;
+}
+
+.ethnic-collection h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
 
 /* FOOTER */
 footer {
