@@ -235,6 +235,17 @@ body {
   margin-bottom: 30px;
   font-weight: 700;
 }
+.western-collection {
+  padding: 60px 8%;
+  background-color: #f9f9f9; /* optional slight background difference */
+}
+
+.western-collection h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
 
 /* FOOTER */
 footer {
